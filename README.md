@@ -1,7 +1,7 @@
-# jobapplier
+# JobApplier
 
 ## Architecture Overview
-See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the system layout, data flow, and non-functional notes.
+Architecture: frontend (Next.js) UI → backend (FastAPI) API → database (Postgres/Supabase). Scrapers run as separate services; a scheduler/worker handles ingestion and background tasks. See backend/, scrapers/, frontend/, and database/ folders for details.
 
 ## Folder Structure
 ```
